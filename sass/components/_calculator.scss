@@ -1,3 +1,181 @@
-body{
+.general {
     width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.67);
+}
+
+.general .container {
+    position: relative;
+    z-index: 1000;
+    width: 25%;
+    height: 70%;
+}
+
+.general .container-background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.general .container-background img {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.general .container .container-content {
+    position: absolute;
+    z-index: 1001;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 5%;
+    /* Agregamos el padding aquí */
+    box-sizing: border-box;
+}
+
+.general .container .item-screen {
+    width: 100%;
+    height: 100%;
+
+}
+
+.general .container .item-screen .screen {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.general .container .item-on {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15rem;
+}
+
+.general .container .item-on .reset {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.general .container .item-on .reset button {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    background-color: rgb(101, 101, 101);
+    border-style: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+   
+}
+
+.general .container .item-on .reset button:hover{
+    background-color: rgb(35, 35, 35);
+}
+
+
+.general .container .item-on .reset button p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    
+}
+
+.general .container .item-on .reset button p:hover{
+    color: white;
+    
+}
+
+.general .container .item-on .on {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+}
+
+.general .container .item-on .on button {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    background-color: rgb(101, 101, 101);
+    border-style: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.general .container .item-on .on button p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    
+}
+
+.general .container .item-on .on button:hover{
+    background-color: rgb(35, 35, 35);
+}
+
+.general .container .item-on .on button p:hover{
+    color: white;
+}
+
+.item-functions {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.item-functions .func-button {
+    flex-basis: 20%;
+}
+
+.item-functions .func-button button {
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: rgb(101, 101, 101);
+    border-radius: 5px;
+}
+
+.item-functions .func-button button:hover{
+    background-color: rgb(35, 35, 35);
+}
+
+.item-functions .func-button button p:hover{
+    color: white;
+}
+
+#numbers button {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border-style: none;
 }

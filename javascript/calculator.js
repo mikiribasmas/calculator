@@ -1,7 +1,8 @@
 const screen = document.getElementById('calculator-screen');
 const buttons = document.querySelectorAll('.func-button button');
 const equals = document.getElementById('equals-button');
-const reset = document.getElementById('ac')
+const reset = document.getElementById('ac');
+const ce = document.getElementById('CE');
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
@@ -18,6 +19,10 @@ reset.addEventListener('click', () => {
   screen.value = 0;}
 );
 
+ce.addEventListener('click', () => { 
+  screen.value = screen.value.slice(0, -1);
+});
+
 equals.addEventListener('click', () => {
 
   const expression = screen.value;
@@ -29,4 +34,6 @@ equals.addEventListener('click', () => {
     screen.value = "Error: expresión no válida";
   }
 });
+
+
 

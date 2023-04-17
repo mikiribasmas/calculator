@@ -52,8 +52,15 @@
 .general .container .item-screen .screen {
   width: 100%;
   height: 100%;
+}
+
+.general .container .item-screen .screen input {
+  width: 100%;
+  height: 100%;
   background-color: rgb(0, 0, 0);
   color: white;
+  text-align: end;
+  font-size: 2.5rem;
 }
 
 .general .container .item-on {
@@ -62,7 +69,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 15rem;
+  gap: 2rem;
 }
 
 .general .container .item-on .reset {
@@ -136,6 +143,41 @@
   color: white;
 }
 
+.general .container .item-on .delete {
+  width: 100%;
+  height: 100%;
+}
+
+.general .container .item-on .delete button {
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  background-color: rgb(101, 101, 101);
+  border-style: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.general .container .item-on .delete button p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.general .container .item-on .delete button:hover {
+  background-color: rgb(35, 35, 35);
+}
+
+.general .container .item-on .delete button p:hover {
+  color: white;
+}
+
 .item-functions {
   width: 100%;
   height: 100%;
@@ -143,10 +185,15 @@
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: space-between;
+  align-items: center;
 }
 
 .item-functions .func-button {
   flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .item-functions .func-button button {
@@ -157,10 +204,23 @@
   font-size: 1.5rem;
   background-color: rgb(101, 101, 101);
   border-radius: 5px;
+  display: flex; /* agregar esta propiedad */
+  justify-content: center; /* agregar esta propiedad */
+  align-items: center; /* agregar esta propiedad */
 }
 
 .item-functions .func-button button:hover {
   background-color: rgb(35, 35, 35);
+}
+
+.item-functions .func-button button p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
 .item-functions .func-button button p:hover {

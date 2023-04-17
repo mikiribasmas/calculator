@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/style/app.css">
-    <script src="../javascript/calculator.js"></script>
+
 
 </head>
 
@@ -23,7 +23,7 @@
                 <div class="container-content">
                     <div class="item-screen">
                         <div class="screen">
-
+                            <input id="calculator-screen" type="text" value="0">
                         </div>
                     </div>
                     <div class="item-on">
@@ -35,28 +35,29 @@
                         </div>
                     </div>
                     <div class="item-functions">
-                        <div class="func-button" id="numbers"><button>7</button></div>
-                        <div class="func-button" id="numbers"><button>8</button></div>
-                        <div class="func-button" id="numbers"><button>9</button></div>
-                        <div class="func-button"><button>/</button></div>
-                        <div class="func-button" id="numbers"><button>4</button></div>
-                        <div class="func-button" id="numbers"><button>5</button></div>
-                        <div class="func-button" id="numbers"><button>6</button></div>
-                        <div class="func-button"><button>X</button></div>
-                        <div class="func-button" id="numbers"><button>1</button></div>
-                        <div class="func-button" id="numbers"><button>2</button></div>
-                        <div class="func-button" id="numbers"><button>3</button></div>
-                        <div class="func-button"><button>-</button></div>
-                        <div class="func-button"><button>.</button></div>
-                        <div class="func-button" id="numbers"><button>0</button></div>
-                        <div class="func-button"><button>=</button></div>
-                        <div class="func-button"><button>+</button></div>
+                        <div class="func-button" id="numbers"><button data-value="7">7</button></div>
+                        <div class="func-button" id="numbers"><button data-value="8">8</button></div>
+                        <div class="func-button" id="numbers"><button data-value="9">9</button></div>
+                        <div class="func-button"><button data-value="/">/</button></div>
+                        <div class="func-button" id="numbers"><button data-value="4">4</button></div>
+                        <div class="func-button" id="numbers"><button data-value="5">5</button></div>
+                        <div class="func-button" id="numbers"><button data-value="6">6</button></div>
+                        <div class="func-button"><button data-value="*">*</button></div>
+                        <div class="func-button" id="numbers"><button data-value="1">1</button></div>
+                        <div class="func-button" id="numbers"><button data-value="2">2</button></div>
+                        <div class="func-button" id="numbers"><button data-value="3">3</button></div>
+                        <div class="func-button"><button data-value="-">-</button></div>
+                        <div class="func-button"><button data-value=".">.</button></div>
+                        <div class="func-button" id="numbers"><button data-value="0">0</button></div>
+                        <div class="func-button"><button id="equals-button" data-value="=">=</button></div>
+                        <div class="func-button"><button data-value="+">+</button></div>
 
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <script src="../javascript/calculator.js"></script>
 </body>
 
 </html>
